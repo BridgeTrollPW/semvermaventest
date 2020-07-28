@@ -30,6 +30,14 @@
     <tag>HEAD</tag>
   </scm>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/BridgeTrollPW/semvermaventest</url>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -52,6 +60,7 @@
         <version>3.0.0-M1</version>
         <configuration>
           <tagNameFormat>@{project.version}</tagNameFormat>
+          <releaseProfiles>release</releaseProfiles>
         </configuration>
       </plugin>
       <plugin>
@@ -205,6 +214,12 @@
             <version>${coveralls-maven-plugin.version}</version>
           </plugin>
         </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>release</id>
+      <build>
+        <defaultGoal>clean install</defaultGoal>
       </build>
     </profile>
   </profiles>
