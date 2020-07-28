@@ -27,7 +27,7 @@
     <connection>scm:git:https://github.com/BridgeTrollPW/semvermaventest</connection>
     <developerConnection>scm:git:https://github.com/BridgeTrollPW/semvermaventest</developerConnection>
     <url>https://github.com/BridgeTrollPW/semvermaventest</url>
-    <tag>HEAD</tag>
+    <tag>master</tag>
   </scm>
 
   <distributionManagement>
