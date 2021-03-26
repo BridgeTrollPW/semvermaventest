@@ -37,7 +37,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>0</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[MAJOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
@@ -53,7 +52,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>1</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[MINOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
@@ -69,7 +67,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>2</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[PATCH @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
@@ -149,6 +146,7 @@
                         <gitFlowConfig>
                             <productionBranch>master</productionBranch>
                             <developmentBranch>sprint-current</developmentBranch>
+                            <releaseBranchPrefix>release-</releaseBranchPrefix>
                             <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                             <featureBranchPrefix>ta-</featureBranchPrefix>
                             <origin>origin</origin>
@@ -157,14 +155,14 @@
                             <!-- git merge messages -->
                             <!-- Default git merge commit message will be used if left empty or undefined. -->
 
-                            <releaseFinishMergeMessage></releaseFinishMergeMessage>
-                            <releaseFinishDevMergeMessage></releaseFinishDevMergeMessage>
+                            <releaseFinishMergeMessage>[RELEASE]Release version @{version}</releaseFinishMergeMessage>
+                            <releaseFinishDevMergeMessage>[RELEASE]Development version @{version}</releaseFinishDevMergeMessage>
 
                             <featureFinishDevMergeMessage></featureFinishDevMergeMessage>
 
-                            <hotfixFinishMergeMessage>[HOTFIX]Update to hotfix version @{version}</hotfixFinishMergeMessage>
-                            <hotfixFinishDevMergeMessage></hotfixFinishDevMergeMessage>
-                            <hotfixFinishReleaseMergeMessage></hotfixFinishReleaseMergeMessage>
+                            <hotfixFinishMergeMessage>[HOTFIX]Release version @{version}</hotfixFinishMergeMessage>
+                            <hotfixFinishDevMergeMessage>[HOTFIX]Development version @{version}</hotfixFinishDevMergeMessage>
+                            <hotfixFinishReleaseMergeMessage>[HOTFIX]Release version @{version}</hotfixFinishReleaseMergeMessage>
                             <hotfixFinishSupportMergeMessage></hotfixFinishSupportMergeMessage>
 
                             <!-- / git merge messages -->
