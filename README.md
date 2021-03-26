@@ -10,4 +10,4 @@
 
 # Feature / Task
 * ganz normal einen td-..... task-branch anlegen
-* beim pr checken `mvn gitflow:feature-finish -DfeatureBranch=ta-....`
+* beim pr checken `mvn gitflow:feature-finish -DfeatureBranch=ta-.... -DkeepBranch=true`
