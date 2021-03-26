@@ -129,6 +129,7 @@
                             <productionBranch>master</productionBranch>
                             <developmentBranch>sprint-current</developmentBranch>
                             <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
+                            <featureBranchPrefix>ta-</featureBranchPrefix>
                             <origin>origin</origin>
                         </gitFlowConfig>
                         <commitMessages>
