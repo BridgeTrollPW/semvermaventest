@@ -37,7 +37,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>0</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[MAJOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
@@ -53,7 +52,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>1</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[MINOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
@@ -69,7 +67,6 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <versionDigitToIncrement>2</versionDigitToIncrement>
-                            <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                             <commitMessagePrefix>[PATCH @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
