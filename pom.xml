@@ -6,7 +6,7 @@
 
     <groupId>net.petafuel</groupId>
     <artifactId>styx</artifactId>
-    <version>3.1.0-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
 
     <name>styx</name>
     <!-- FIXME change it to the project's website -->
@@ -38,7 +38,7 @@
                         <configuration>
                             <versionDigitToIncrement>0</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
-                            <commitMessagePrefix>MAJOR @{version}</commitMessagePrefix>
+                            <commitMessagePrefix>[MAJOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -54,6 +54,7 @@
                         <configuration>
                             <versionDigitToIncrement>1</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
+                            <commitMessagePrefix>[MINOR @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -69,6 +70,7 @@
                         <configuration>
                             <versionDigitToIncrement>2</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
+                            <commitMessagePrefix>[PATCH @{version}] </commitMessagePrefix>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -129,6 +131,45 @@
                             <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                             <origin>origin</origin>
                         </gitFlowConfig>
+                        <commitMessages>
+                            <featureStartMessage></featureStartMessage>
+                            <featureFinishMessage></featureFinishMessage>
+
+                            <hotfixStartMessage></hotfixStartMessage>
+                            <hotfixFinishMessage></hotfixFinishMessage>
+
+                            <hotfixVersionUpdateMessage>[HOTFIX]Update to hotfix version @{version}</hotfixVersionUpdateMessage>
+
+                            <releaseStartMessage></releaseStartMessage>
+                            <releaseFinishMessage></releaseFinishMessage>
+
+                            <releaseVersionUpdateMessage>[RELEASE]Update for next development version @{version}</releaseVersionUpdateMessage>
+
+                            <!-- git merge messages -->
+                            <!-- Default git merge commit message will be used if left empty or undefined. -->
+
+                            <releaseFinishMergeMessage></releaseFinishMergeMessage>
+                            <releaseFinishDevMergeMessage></releaseFinishDevMergeMessage>
+
+                            <featureFinishDevMergeMessage></featureFinishDevMergeMessage>
+
+                            <hotfixFinishMergeMessage></hotfixFinishMergeMessage>
+                            <hotfixFinishDevMergeMessage></hotfixFinishDevMergeMessage>
+                            <hotfixFinishReleaseMergeMessage></hotfixFinishReleaseMergeMessage>
+                            <hotfixFinishSupportMergeMessage></hotfixFinishSupportMergeMessage>
+
+                            <!-- / git merge messages -->
+
+                            <tagHotfixMessage>[HOTFIX] @{version}</tagHotfixMessage>
+                            <tagReleaseMessage>[RELEASE] @{version}</tagReleaseMessage>
+
+                            <!-- Migration Note: This was called <updateDevToAvoidConflitsMessage> in version 1.11.0, but has been deprecated in favour of the correctly spelt one below. -->
+                            <updateDevToAvoidConflictsMessage>Update develop to production version to avoid merge conflicts</updateDevToAvoidConflictsMessage>
+                            <updateDevBackPreMergeStateMessage>Update develop version back to pre-merge state</updateDevBackPreMergeStateMessage>
+
+                            <updateReleaseToAvoidConflictsMessage>Update release to hotfix version to avoid merge conflicts</updateReleaseToAvoidConflictsMessage>
+                            <updateReleaseBackPreMergeStateMessage>Update release version back to pre-merge state</updateReleaseBackPreMergeStateMessage>
+                        </commitMessages>
                     </configuration>
                 </plugin>
             </plugins>
