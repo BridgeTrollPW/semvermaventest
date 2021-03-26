@@ -6,7 +6,7 @@
 
     <groupId>net.petafuel</groupId>
     <artifactId>styx</artifactId>
-    <version>4.0.2</version>
+    <version>4.0.3</version>
 
     <name>styx</name>
     <!-- FIXME change it to the project's website -->
@@ -90,7 +90,7 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <gitFlowConfig>
-                                <versionTagPrefix>-</versionTagPrefix>
+                                <versionTagPrefix></versionTagPrefix>
                             </gitFlowConfig>
                         </configuration>
                     </plugin>
