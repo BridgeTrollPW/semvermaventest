@@ -6,7 +6,7 @@
 
     <groupId>net.petafuel</groupId>
     <artifactId>styx</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.1.0-SNAPSHOT</version>
 
     <name>styx</name>
     <!-- FIXME change it to the project's website -->
@@ -38,9 +38,7 @@
                         <configuration>
                             <versionDigitToIncrement>0</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
-                            <commitMessages>
-                                <releaseVersionUpdateMessage>MAJOR Release ${project.version}. Update for next development version @{version}</releaseVersionUpdateMessage>
-                            </commitMessages>
+                            <commitMessagePrefix>MAJOR @{version}</commitMessagePrefix>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -56,9 +54,6 @@
                         <configuration>
                             <versionDigitToIncrement>1</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
-                            <commitMessages>
-                                <releaseVersionUpdateMessage>MINOR Release ${project.version}. Update for next development version @{version}</releaseVersionUpdateMessage>
-                            </commitMessages>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -74,9 +69,6 @@
                         <configuration>
                             <versionDigitToIncrement>2</versionDigitToIncrement>
                             <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
-                            <commitMessages>
-                                <releaseVersionUpdateMessage>PATCH Release ${project.version}. Update for next development version @{version}</releaseVersionUpdateMessage>
-                            </commitMessages>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -134,10 +126,7 @@
                         <gitFlowConfig>
                             <productionBranch>master</productionBranch>
                             <developmentBranch>sprint-current</developmentBranch>
-                            <featureBranchPrefix>ta-</featureBranchPrefix>
-                            <releaseBranchPrefix>integration</releaseBranchPrefix>
                             <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
-                            <versionTagPrefix></versionTagPrefix>
                             <origin>origin</origin>
                         </gitFlowConfig>
                     </configuration>
