@@ -90,7 +90,7 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <gitFlowConfig>
-                                <versionTagPrefix>HOTFIX-</versionTagPrefix>
+                                <versionTagPrefix></versionTagPrefix>
                             </gitFlowConfig>
                         </configuration>
                     </plugin>
@@ -154,19 +154,6 @@
                             <origin>origin</origin>
                         </gitFlowConfig>
                         <commitMessages>
-                            <featureStartMessage></featureStartMessage>
-                            <featureFinishMessage></featureFinishMessage>
-
-                            <hotfixStartMessage></hotfixStartMessage>
-                            <hotfixFinishMessage></hotfixFinishMessage>
-
-                            <hotfixVersionUpdateMessage>[HOTFIX]Update to hotfix version @{version}</hotfixVersionUpdateMessage>
-
-                            <releaseStartMessage></releaseStartMessage>
-                            <releaseFinishMessage></releaseFinishMessage>
-
-                            <releaseVersionUpdateMessage>[RELEASE]Update for next development version @{version}</releaseVersionUpdateMessage>
-
                             <!-- git merge messages -->
                             <!-- Default git merge commit message will be used if left empty or undefined. -->
 
@@ -175,7 +162,7 @@
 
                             <featureFinishDevMergeMessage></featureFinishDevMergeMessage>
 
-                            <hotfixFinishMergeMessage></hotfixFinishMergeMessage>
+                            <hotfixFinishMergeMessage>[HOTFIX]Update to hotfix version @{version}</hotfixFinishMergeMessage>
                             <hotfixFinishDevMergeMessage></hotfixFinishDevMergeMessage>
                             <hotfixFinishReleaseMergeMessage></hotfixFinishReleaseMergeMessage>
                             <hotfixFinishSupportMergeMessage></hotfixFinishSupportMergeMessage>
