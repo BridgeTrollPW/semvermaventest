@@ -146,6 +146,7 @@
                         <gitFlowConfig>
                             <productionBranch>master</productionBranch>
                             <developmentBranch>sprint-current</developmentBranch>
+                            <releaseBranchPrefix>release-</releaseBranchPrefix>
                             <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                             <featureBranchPrefix>ta-</featureBranchPrefix>
                             <origin>origin</origin>
