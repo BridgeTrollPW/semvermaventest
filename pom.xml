@@ -90,7 +90,7 @@
                         <artifactId>gitflow-maven-plugin</artifactId>
                         <configuration>
                             <gitFlowConfig>
-                                <versionTagPrefix>-</versionTagPrefix>
+                                <versionTagPrefix></versionTagPrefix>
                             </gitFlowConfig>
                         </configuration>
                     </plugin>
