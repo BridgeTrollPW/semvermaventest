@@ -155,14 +155,14 @@
                             <!-- git merge messages -->
                             <!-- Default git merge commit message will be used if left empty or undefined. -->
 
-                            <releaseFinishMergeMessage></releaseFinishMergeMessage>
-                            <releaseFinishDevMergeMessage></releaseFinishDevMergeMessage>
+                            <releaseFinishMergeMessage>[RELEASE]Release version @{version}</releaseFinishMergeMessage>
+                            <releaseFinishDevMergeMessage>[RELEASE]Development version @{version}</releaseFinishDevMergeMessage>
 
                             <featureFinishDevMergeMessage></featureFinishDevMergeMessage>
 
-                            <hotfixFinishMergeMessage>[HOTFIX]Update to hotfix version @{version}</hotfixFinishMergeMessage>
-                            <hotfixFinishDevMergeMessage></hotfixFinishDevMergeMessage>
-                            <hotfixFinishReleaseMergeMessage></hotfixFinishReleaseMergeMessage>
+                            <hotfixFinishMergeMessage>[HOTFIX]Release version @{version}</hotfixFinishMergeMessage>
+                            <hotfixFinishDevMergeMessage>[HOTFIX]Development version @{version}</hotfixFinishDevMergeMessage>
+                            <hotfixFinishReleaseMergeMessage>[HOTFIX]Release version @{version}</hotfixFinishReleaseMergeMessage>
                             <hotfixFinishSupportMergeMessage></hotfixFinishSupportMergeMessage>
 
                             <!-- / git merge messages -->
