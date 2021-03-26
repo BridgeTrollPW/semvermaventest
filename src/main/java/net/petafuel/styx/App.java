@@ -10,7 +10,6 @@ public class App
     {
         //some more dev
         System.out.println( "Hello World! " );
-        System.out.println( "Hello World! " );
         //some dev
     }
 }
