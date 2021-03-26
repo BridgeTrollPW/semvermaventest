@@ -6,7 +6,7 @@
 
     <groupId>net.petafuel</groupId>
     <artifactId>styx</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
 
     <name>styx</name>
     <!-- FIXME change it to the project's website -->
