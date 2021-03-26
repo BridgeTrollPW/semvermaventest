@@ -76,6 +76,27 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>hotfix-tag-prefix</id>
+            <activation>
+                <property>
+                    <name>hotfixBranch</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.amashchenko.maven.plugin</groupId>
+                        <artifactId>gitflow-maven-plugin</artifactId>
+                        <configuration>
+                            <gitFlowConfig>
+                                <versionTagPrefix>HOTFIX-</versionTagPrefix>
+                            </gitFlowConfig>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 
     <build>
